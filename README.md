@@ -4,7 +4,7 @@
 
 ### 步骤
  ```
- git clone https://github.com/SwordsmanYao/react-antd-mobx-admin.git
+ git clone https://github.com/Andy-yubing/privateJobReact.git
  ``` 
  ```
  cd react-antd-mobx-admin
