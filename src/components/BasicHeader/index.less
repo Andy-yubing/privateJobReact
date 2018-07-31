@@ -1,0 +1,50 @@
+@import "~antd/lib/style/themes/default.less";
+
+.header {
+  background: #fff;
+  padding: 0px;
+  .left {
+    float: left;
+    .trigger {
+      float: left;
+      font-size: 18px;
+      line-height: 64px;
+      padding: 0 24px;
+      cursor: pointer;
+      transition: color .3s;
+      &:hover {
+        color: #1890ff;
+      }
+    }
+    .breadcrumb {
+      float: left;
+      margin: 20px;
+    }
+  }
+  .right {
+    float: right;
+    margin-right: 10px;
+    .action {
+      cursor: pointer;
+      padding: 0 12px;
+      transition: all .3s;
+      height: 100%;
+      > i {
+        font-size: 16px;
+        vertical-align: middle;
+      }
+      &:hover {
+        background: @primary-1;
+      }
+    }
+    .user {
+      .avatar {
+        vertical-align: middle;
+        margin-right: 8px;
+      }
+    }
+  }
+}
+
+
+

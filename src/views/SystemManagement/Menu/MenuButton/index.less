@@ -1,0 +1,21 @@
+@import "~antd/lib/style/themes/default.less";
+
+.layout {
+  height: 100%;
+  background: #fff;
+  :global{
+    .ant-table-tbody > tr > td {
+      padding-top: 2px !important;
+      padding-bottom:2px !important;
+    }
+  }
+}
+.tableAlert {
+  margin-bottom: 12px;
+}
+.toolbar {
+  margin-bottom: 16px;
+  > *:not(:last-child) {
+    margin-right: 10px;
+  }
+}

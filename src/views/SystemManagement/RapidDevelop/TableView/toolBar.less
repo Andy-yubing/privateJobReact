@@ -1,0 +1,27 @@
+@import "~antd/lib/style/themes/default.less";
+@import "~@/styles/mixins.less";
+.toolBar {
+  .clearFloat;
+  :global {
+    .ant-form-item {
+      .ant-input {
+        width: 160px;
+      }
+      .ant-calendar-picker {
+        width: 160px;
+      }
+      .ant-select {
+        width: 160px;
+      }
+    }
+  }
+  margin-bottom: 12px;
+  .buttons {
+    display: inline-block;
+    margin: 4px 0px;
+  }
+  .buttonGroups {
+    float: right;
+    margin: 4px 0px;
+  }
+}
