@@ -16,6 +16,11 @@ const config = [
     path: '/Login',
     component: asyncComponent(() => import(/* webpackChunkName: "Login" */ '../views/Login')),
     exact: true,
+  },
+  {
+    path: '/carChart',
+    component: asyncComponent(() => import('../views/carChart')),
+    exact: true,
   }
 ];
 

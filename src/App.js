@@ -18,14 +18,14 @@ mobx.useStrict(true);
 
 // 全局设置 locale
 moment.locale('zh-cn');
-
+console.log(stores)
 class App extends Component {
 
   componentWillMount() {
     // 在页面刷新后从 session 中取出当前用户信息
     stores.currentUser.loadCurrentUserFromSession();
   }
-
+  
   render() {
     return (
       <Provider {...stores}>

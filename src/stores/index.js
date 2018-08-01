@@ -9,5 +9,5 @@ keys.forEach(key => {
   const name = pathArr[pathArr.length-2];
   stores[name] = context(key).default;
 });
- console.log(stores)
+//  console.log(stores)
 export default stores;

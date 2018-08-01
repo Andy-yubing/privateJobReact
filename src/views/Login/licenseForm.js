@@ -21,14 +21,11 @@ export default class LicenseForm extends Component {
   handleSubmit = (e) => {
     const { form, currentUser , setModalVisible } = this.props;
     e.preventDefault();
-    form.validateFields({ force: true },
-      (err, values) => {
+    form.validateFields({ force: true },(err, values) => {
         if (!err) {
-          currentUser.submitLicense({
-            License: values.License,
-          }).then(()=>{
-            setModalVisible(false);
-            message.success('提交成功');
+            currentUser.submitLicense({License: values.License}).then(()=>{
+              setModalVisible(false);
+              message.success('提交成功');
           }).catch((err)=>{
             message.error({err});
           });

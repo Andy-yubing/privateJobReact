@@ -51,10 +51,10 @@ export default class Login extends Component {
   handleSubmit = (e) => {
     const { form, currentUser } = this.props;
     e.preventDefault();
-    form.validateFields({ force: true },
-      (err, values) => {
+    form.validateFields({ force: true },(err, values) => {
         if (!err) {
           currentUser.login(values).then((value) => {
+            
             if(value===105){
               this.setModalVisible(true);
 
